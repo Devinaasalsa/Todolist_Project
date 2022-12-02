@@ -41,7 +41,7 @@
                     <a href="/dashboard/createtodo" class="text-success">Create</a>
                 </div>
                 <div class="d-flex justify-content-center ml-4">
-                    <a href="/dashboard/complated" class="text-success">Complated</a>
+                    <a href="/dashboard/complated" class="text-success">Completed</a>
                 </div>
             </div>
         </div>
@@ -70,9 +70,9 @@
                             {{ $item['title'] }}
                         </a>
                         <p style="color: rgb(85, 85, 85); font-size: 16px;">{{ $item['description'] }}</p>
-                        {{-- konsep ternary : if colum status baris ini isinya 1 bakal munculin teks 'Complated' selain
+                        {{-- konsep ternary : if colum status baris ini isinya 1 bakal munculin teks 'Completed' selain
                         dari itu akan menampilkan teks 'On-Proccess' --}}
-                        <p class="text-muted">{{ $item['status'] ? 'Complated on :' : 'Target Complated :'}}
+                        <p class="text-muted">{{ $item['status'] ? 'Completed on :' : 'Target Completed :'}}
                             <span class="pl-1 date">
                                 {{ $item['status'] ? \Carbon\Carbon::parse($item->done_time)->format('j F, Y'):
                                 \Carbon\Carbon::parse($item->date)->format('j F, Y')}} </span>
@@ -98,7 +98,7 @@
         </div>
         {{-- <div class="headlinetodo d-flex px-5" style="justify-content: space-between;">
             <div class="kiri">
-                <h4 class="text-center">Todo's Complated</h5>
+                <h4 class="text-center">Todo's Completed</h5>
             </div>
         </div>
         <hr style="width: 95%">
