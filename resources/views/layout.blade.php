@@ -97,10 +97,11 @@
                     </a>
                 </li>
                     <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle pt-2" href="#" role="button"
+                        <i class="fa-solid fa-circle-user" style="font-size: 20px; color:#FFD67C;"></i>
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle pt-2 pl-2" href="#" role="button"
                             data-toggle="dropdown">
                             {{ Auth::user()->username }}
-                            <i class="fa-solid fa-circle-user" style="font-size: 20px"></i>
+                            
                         </a>
                         
                         <div class="dropdown-menu">
