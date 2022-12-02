@@ -82,8 +82,11 @@
                         </p>
                     </div>
                     <div class="ml-auto  atur">
-                        <a href="/edit/{{ $item['id'] }}"><span class="fas fa-pen btn pen"
-                                style="color:rgb(255, 172, 95)"></span> </a>
+                        <a href="/edit/{{ $item['id'] }}">
+                            
+                            <span class="fas fa-pen btn pen" style="color:rgb(255, 172, 95)">
+                            </span> 
+                        </a>
                         <form action="{{ route('delete', $item['id']) }}" method="POST">
                             @csrf
                             @method('DELETE')

@@ -60,7 +60,7 @@
                         <form action="/todo/complated/{{ $item['id'] }}" method="POST">
                             @csrf
                             @method('PATCH')
-                            <button type="submit" class="fas fa-circle-check btn"></button>
+                            <button type="submit" class="fas fa-circle-check text-success btn"></button>
                         </form>
                     </div>
                     <div class="d-flex flex-column ">
